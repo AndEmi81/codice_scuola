@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-09 01:07:41 pm"/>
+        <attribute name="created" value="YW5kcmU7UENBRTsyMDIzLTAyLTA5OzAxOjAwOjE1IHBtOzIxMzY="/>
+        <attribute name="edited" value="YW5kcmU7UENBRTsyMDIzLTAyLTA5OzAxOjA3OjQxIHBtOzE7MjI1MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, somma" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <assign variable="somma" expression="0"/>
+            <output expression="&quot;Inserire il valore del primo numero da sommare&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Scrivi il valore del secondo numero da sommare&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="somma" expression="a+b"/>
+            <output expression="&quot;La somma dei numeri &#232; &quot; &amp;somma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

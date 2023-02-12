@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 11:51:15 am"/>
+        <attribute name="created" value="YW5kcmU7QUU4MV9QQzsyMDIyLTExLTE4OzExOjIyOjA2IGFtOzIzMjU="/>
+        <attribute name="edited" value="YW5kcmU7QUU4MV9QQzsyMDIyLTExLTE4OzExOjUxOjE1IGFtOzE7MjQzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Progettare  l'algoritmo di una cassa del supermercato.&#13;&#10;Calcolare il costo di tutti i prodotti, scorporando IVA."/>
+            <declare name="i, numeroProdotto, costo, somma, iva" type="Real" array="False" size=""/>
+            <assign variable="numeroProdotto" expression="0"/>
+            <assign variable="somma" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="iva" expression="0.22"/>
+            <output expression="&quot;Inserisci il numero di prodotti acquistati&quot;" newline="True"/>
+            <input variable="numeroProdotto"/>
+            <if expression="numeroProdotto != 0">
+                <then>
+                    <for variable="i" start="1" end="numeroProdotto" direction="inc" step="1">
+                        <output expression="&quot;Inserisci il prezzo del prodotto&quot;" newline="True"/>
+                        <input variable="costo"/>
+                        <assign variable="somma" expression="somma + costo"/>
+                    </for>
+                    <output expression="&quot;La tua spessa &#232; di euro &quot; &amp;somma" newline="True"/>
+                    <output expression="&quot;L'IVA della tua spesa &#232; &quot; &amp;(somma * iva)" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Il tuo carrello &#232; vuoto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

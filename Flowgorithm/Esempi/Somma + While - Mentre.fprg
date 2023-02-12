@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-14 11:42:51 am"/>
+        <attribute name="created" value="YW5kcmU7QUU4MV9QQzsyMDIyLTEwLTExOzEyOjU4OjA2IHBtOzIzNDI="/>
+        <attribute name="edited" value="YW5kcmU7QUU4MV9QQzsyMDIyLTEwLTExOzAxOjI1OjU4IHBtOzk7MjQ1Nw=="/>
+        <attribute name="edited" value="YW5kcmU7UENBRTsyMDIzLTAxLTE0OzExOjQyOjUxIGFtOzE7MjIzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="DESCRIZIONE&#13;&#10;L'algoritmo calcola la somma tra due numeri. &#13;&#10;Verifica SE la somma &#232; maggiore di 20. E manda un messaggio di attenzione se &#232; sopra soglia, altimenti scrive che tutto ok.&#13;&#10;DATI&#13;&#10;In: X (INT), Y (INT)&#13;&#10;Out: Somma (INT)"/>
+            <declare name="X, Y, Somma" type="Integer" array="False" size=""/>
+            <assign variable="X" expression="0"/>
+            <assign variable="Y" expression="0"/>
+            <assign variable="Somma" expression="0"/>
+            <output expression="&quot;Inserisci il primo numero&quot;" newline="True"/>
+            <input variable="X"/>
+            <output expression="&quot;Inserisci il secondo numero&quot;" newline="True"/>
+            <input variable="Y"/>
+            <assign variable="Somma" expression="X+Y"/>
+            <output expression="&quot;La somma &#232; &quot; &amp;Somma" newline="True"/>
+            <if expression="Somma &gt; 20">
+                <then>
+                    <output expression="&quot;Attenzione la somma &#232; maggiore di 20&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;La somma &#232; minore di 20, tutto ok!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

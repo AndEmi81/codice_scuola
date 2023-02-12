@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-13 11:51:16 am"/>
+        <attribute name="created" value="YW5kcmU7QUU4MV9QQzsyMDIyLTEwLTEzOzExOjA4OjIzIGFtOzIzMjI="/>
+        <attribute name="edited" value="YW5kcmU7QUU4MV9QQzsyMDIyLTEwLTEzOzExOjUxOjE2IGFtOzQ7MjQzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Creare un algoritmo per la risoluzione di un equazione di pirmo grado. &#13;&#10;&#13;&#10;Ax = B --&gt; x = B/A&#13;&#10;&#13;&#10;Input: "/>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <declare name="X" type="Integer" array="False" size=""/>
+            <assign variable="A" expression="0"/>
+            <assign variable="B" expression="0"/>
+            <assign variable="X" expression="0"/>
+            <do expression="A = 0">
+                <output expression="&quot;Inserisci il coefficiente A diverso da zero&quot;" newline="True"/>
+                <input variable="A"/>
+                <if expression="A = 0">
+                    <then>
+                        <output expression="&quot;A deve essere diverso da zero&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <output expression="&quot;Inserisci il coefficiente B&quot;" newline="True"/>
+            <input variable="B"/>
+            <assign variable="X" expression="B/A"/>
+            <output expression="&quot;X &#232; uguale a:&quot;" newline="True"/>
+            <output expression="X" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

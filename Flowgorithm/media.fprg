@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:50:10 am"/>
+        <attribute name="created" value="YW5kcmU7QUU4MV9QQzsyMDIyLTExLTE4OzEwOjEwOjQ4IGFtOzIzMjc="/>
+        <attribute name="edited" value="YW5kcmU7QUU4MV9QQzsyMDIyLTExLTE4OzEwOjUwOjEwIGFtOzE7MjQyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Progettare un algoritmo che prende in input n voti e ne calcola la media. "/>
+            <declare name="voto, media, numeroVoti, i, somma" type="Integer" array="False" size=""/>
+            <comment text="Abbiamo dichiaro le variabili che utilizzeremo nell'algoritmo."/>
+            <assign variable="voto" expression="0"/>
+            <assign variable="media" expression="0"/>
+            <assign variable="numeroVoti" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="somma" expression="0"/>
+            <comment text="Abbiamo inizializzato le variabili a zero. "/>
+            <output expression="&quot;Inserisci il numero di voti di cui vuoi calcolare la media&quot;" newline="True"/>
+            <input variable="numeroVoti"/>
+            <comment text="Abbiamo creato il ciclo for che chiedi di inserire i voti di cui vogliamo fare la media"/>
+            <for variable="i" start="1" end="numeroVoti" direction="inc" step="1">
+                <output expression="&quot;Inserisci il voto numero &quot; &amp;i" newline="True"/>
+                <input variable="voto"/>
+                <assign variable="somma" expression="somma + voto"/>
+                <comment text="Al termine del ciclo avremo la somma di tutti i voti"/>
+            </for>
+            <assign variable="media" expression="somma/numeroVoti"/>
+            <comment text="Ho calcolato la media e stampo il risultato a monitor per l'utente."/>
+            <output expression="&quot;La media dei voti &#232; &quot; &amp;media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

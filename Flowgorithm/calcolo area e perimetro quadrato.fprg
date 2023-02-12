@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="andre"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-25 07:03:58 pm"/>
+        <attribute name="created" value="YW5kcmU7QUU4MV9QQzsyMDIyLTEwLTI1OzA2OjU4OjM0IHBtOzIzNTE="/>
+        <attribute name="edited" value="YW5kcmU7QUU4MV9QQzsyMDIyLTEwLTI1OzA3OjAzOjU4IHBtOzE7MjQ1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lato, perimetro, area" type="Integer" array="False" size=""/>
+            <output expression="&quot;Questo programma calcola l'area di un quadrato&quot;" newline="True"/>
+            <output expression="&quot;Inserisci il lato del quadrato&quot;" newline="True"/>
+            <input variable="lato"/>
+            <assign variable="perimetro" expression="lato*4"/>
+            <assign variable="area" expression="lato*lato"/>
+            <output expression="&quot;Il perimetro del quadrato &#232; &quot;&amp;perimetro" newline="True"/>
+            <output expression="&quot;L'area del quadrato &#232; &quot;&amp;area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
